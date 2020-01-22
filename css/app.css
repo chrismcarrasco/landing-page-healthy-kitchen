@@ -1,0 +1,362 @@
+* {box-sizing: border-box;}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 5.5rem;
+    line-height: 7.5rem;
+}
+
+h4 {
+    font-size: 1.85rem;
+    color: #2ec508
+}
+
+h2 {
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+}
+
+.white-text {
+    color: #fff;
+}
+
+section {
+    display: relative;
+    margin: auto;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 10%;
+}
+
+section.hero {
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position-x: 100;
+    background-position-y: 60;
+    background-repeat: no-repeat;
+
+    color: #fff;
+    display:flex;
+    align-items: center;
+}
+
+img.logo {
+    width: 200px;
+}
+
+section.info {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section.reviews {
+    background-image: url('../img/pizza.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info-img {
+    width: 200px;
+}
+
+.info-div {
+    padding: 20px;
+}
+
+.left-content {
+    text-align: center;
+    width:40%;
+}
+
+.margin-bottom {
+    margin-bottom: 2rem;
+}
+
+.margin-bottom-lg {
+    margin-bottom: 8rem;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flex-column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 500px;
+    min-height: 460px;
+    background: #fff;
+    color: #684318;
+    margin: 20px;
+    padding: 50px;
+}
+
+.review-font {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.reviewer-name {
+    text-align: right;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+img.review-stars {
+    width: 150px;
+}
+
+.cta {
+    height: 8rem;
+    width: 100%;
+    color: #f3f3f3;
+    background: rgb(255, 116, 23);
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    transition: 300ms all;
+}
+
+.cta:hover {
+    background: rgb(190, 81, 9);
+}
+
+.full-width {
+    width: 100%;
+}
+
+.divide-one-half {
+    width: 45%;
+}
+
+.divide-forty {
+    width: 40%;
+}
+
+.divide-sixty {
+    width: 60%;
+}
+
+.align-center {
+    text-align: center;
+}
+
+@media screen and (max-width: 890px){
+    section {
+        display: relative;
+        margin: auto;
+        width: 100%;
+        padding: 0 3%;
+    }
+
+    section.hero {
+        background-image: url("../img/hero.jpg");
+        background-size: 100% cover;
+        background-position: center;
+        background-position-x: 100;
+        background-position-y: 60;
+        background-repeat: no-repeat;
+    
+        color: #fff;
+        display:flex;
+        align-items: center;
+    }
+
+    img.logo {
+        width: 50%;
+    }
+
+    .left-content {
+        text-align: center;
+        width:50%;
+    }
+
+    section.info {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .info-img {
+        width: 100%;
+        min-width: 100px;
+        max-width: 250px;
+        margin-left: 25px;
+        margin-bottom: 20px;
+    }
+
+    .info-div {
+        padding: 0px 10%;
+    }
+
+    .review-card {
+        width: 80%;
+        min-height: 300px;
+        background: #fff;
+        color: #684318;
+        margin: 20px 0px;
+        padding: 50px;
+    }
+
+    .divide-sixty {
+        width: 100%;
+    }
+
+    .divide-forty {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-device-width: 850px) and (orientation: landscape) { 
+
+    section.hero, section.info, section.reviews {
+        padding: 50px 3%;
+    }
+
+    .flex-row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .review-card {
+        width: 40%;
+        background: #fff;
+        color: #684318;
+        margin: 15px;
+        padding: 40px;
+    }
+
+    .margin-bottom-lg {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 720px){ 
+    body {width: 100%;}
+    
+    section {
+        display: relative;
+        margin: auto;
+        padding: 0 5%;
+    }
+
+    section.hero {
+        background-image: url("../img/hero.jpg");
+        background-size: 100% cover;
+        background-position: left;
+        background-position-x: -350px;
+        background-position-y: 0px;
+        background-repeat: no-repeat;
+    
+        color: #fff;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .left-content {
+        width: 80%;
+    }
+
+    section.info {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .info-img {
+        width: 200%;
+        margin-left: 20px;
+    }
+
+    .info-div {
+        padding: 3%;
+    }
+
+    .review-card {
+        width: 80%;
+        background: #fff;
+        color: #684318;
+        margin: 20px 0px;
+        padding: 50px;
+    }
+
+    .cta {
+        height: 8rem;
+        width: 80%;
+        color: #f3f3f3;
+        background: rgb(255, 116, 23);
+        border-radius: 25px;
+        outline: none;
+        border: none;
+        transition: 300ms all;
+    }
+    
+    .cta:hover {
+        background: rgb(190, 81, 9);
+    }
+
+    .full-width {
+        width: 90%;
+    }
+
+    .margin-bottom-lg {
+        margin-bottom: 4rem;
+    }
+
+}
